@@ -1,0 +1,130 @@
+$header-height: 100px
+.site-header
+  position: relative
+  padding: $header-height 0 500px
+  height: 0
+  width: 100%
+  background: transparent url('../images/test.jpg') no-repeat center center
+  background-size: cover
+
+  &:after, &:before
+    content: ""
+    position: absolute
+    display: block
+    left: 0
+    top: $header-height +2px
+    height: 2px
+    width: 100%
+    background-color: $color-yellow
+
+  &:after
+    top: auto
+    bottom: 2px
+
+  hgroup
+    max-width: $max-container-width
+    box-sizing: border-box
+    margin: 0 auto
+
+  .site-title
+    position: absolute
+    top: ($header-height - 56px) / 2
+    z-index: 3
+    margin: 0
+    a
+      display: block
+      text-indent: -1000px
+      width: 298px
+      height: 56px
+      background: transparent url('../images/logo.png') no-repeat 0 0
+
+  .site-description
+    display: none
+
+
+  .main-navigation
+    position: absolute
+    height: $header-height
+    left: 0
+    top: 0
+    width: 100%
+    background-color: $color-bg
+
+    .menu-navigation-container
+      max-width: $max-container-width
+      box-sizing: border-box
+      margin: 0 auto
+      &:after
+        content: ""
+        display: table
+        clear: both
+
+      .menu
+        padding: 0
+        margin: 0
+        list-style: none
+        float: right
+        font-size: 18px
+        line-height: 40px
+        white-space: nowrap
+        font-family: $font-contrast
+
+        .menu-item
+          display: block
+          float: left
+          margin: ($header-height - 40px)/2 0 0 30px
+          height: 40px
+          &.current-menu-item
+            position: relative
+            &:after
+              content: ""
+              display: block
+              position: absolute
+              bottom: 2px
+              left: 0
+              width: 100%
+              height: 2px
+              background-color: $color-yellow-dark
+
+          &.primary
+            a
+              background-color: $color-blue
+              color: #fff
+              border-radius: 4px
+              text-shadow: 0 2px 2px rgba(0, 0, 0, .1)
+              padding: 0 20px
+
+        a
+          display: block
+          cursor: pointer
+          color: #333
+          text-decoration: none
+          &:hover
+            color: $color-text
+            text-decoration: none
+
+
+#after-header-widgets
+  position: absolute
+  left: 0
+  top: $header-height + 140px
+  width: 100%
+  color: #fff
+  text-align: right
+  .widget
+    max-width: $max-container-width
+    box-sizing: border-box
+    margin: 0 auto
+
+
+.header-content
+  .header-content-title
+    font-size: 44px
+    line-height: 1.2
+    font-weight: lighter
+    font-family: $font-contrast
+
+  .labels
+    margin: 15px 0 20px
+    .label
+      margin-left: 4px
