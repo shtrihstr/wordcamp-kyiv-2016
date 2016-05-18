@@ -1,2 +1,55 @@
-.wcb_widget_sponsors
-  .sponsor-level
+.wcua-partner-item
+  border-bottom: 1px solid #eeeeee
+  padding-bottom: 40px
+  margin-top: 40px
+  &:after
+    content: ""
+    display: table
+    clear: left
+
+  h2
+    margin-top: 0
+    line-height: 1.1
+    text-transform: uppercase
+    margin-bottom: 12px
+
+  .wcua-partner-logo
+    width: 312px
+    box-sizing: border-box
+    border: 3px solid #EEEEEE
+    position: relative
+    padding: 3px
+    left: 0
+    top: 0
+    float: left
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      left: 2px
+      top: 2px
+      right: 2px
+      bottom: 2px
+      border: 1px solid #EEEEEE
+
+    img
+      display: block
+      width: 100%
+      height: auto
+
+  .wcua-partner-desc
+    margin-left: 40px
+    float: left
+    width: calc(100% - #{40px + 312px})
+
+  .wcua-partner-link
+    font-family: $font-contrast
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.1
+    & + p
+      margin-top: 12px
+    a
+      color: #dddddd
+      text-decoration: none

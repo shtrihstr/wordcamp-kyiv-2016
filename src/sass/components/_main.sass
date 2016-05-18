@@ -1,6 +1,11 @@
-.site-content
+#primary
   max-width: $max-container-width
   box-sizing: border-box
-  margin: 40px auto
-  background: $color-box
-  padding: 70px
+  margin: 60px auto
+  padding: 0
+  +breakpoint-max($responsive-tablet)
+    padding-left: $screen-padding-mobile
+    padding-right: $screen-padding-mobile
+
+#secondary
+  display: none

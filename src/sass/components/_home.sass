@@ -1,11 +1,60 @@
-.home
+.wcb_widget_sponsors
+  .sponsor-logo
+    display: block
+    cursor: pointer
+    overflow: hidden
+    box-sizing: border-box
+    border: 3px solid #EEEEEE
+    position: relative
+    margin: 0 0 30px 0
+    padding: 3px
+    float: left
+    +breakpoint-min($responsive-mobile)
+      width: 21.3592233%
+      margin-right: 4.854369%
+    +breakpoint-max($responsive-mobile)
+      margin-right: $screen-padding-mobile
+      width: calc(50% - #{$screen-padding-mobile / 2})
+      &:nth-child(2n)
+        margin-right: 0
 
-  .site-content
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      left: 2px
+      top: 2px
+      right: 2px
+      bottom: 2px
+      border: 1px solid #EEEEEE
 
-    .entry-header
+    img
+      display: block
+      width: 100%
+      height: auto
 
+    a
+      display: block
+      height: 0
+      padding: 0 0 70%
+      overflow: hidden
 
-      .entry-title
-        color: $color-yellow
-        font-size: 38px
-        text-transform: uppercase
+  .sponsor-level
+    &:after
+      display: table
+      content: ""
+      clear: both
+    &.super
+      .sponsor-logo
+        +breakpoint-min($responsive-mobile)
+          width: 30.097%
+          &:nth-child(3n)
+            margin-right: 0
+        +breakpoint-max($responsive-mobile)
+          width: 100%
+          margin-right: 0
+
+  .sponsor-level-title
+    display: none
+  .widget-title
+    margin-bottom: 40px
