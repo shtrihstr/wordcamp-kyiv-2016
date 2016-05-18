@@ -5,9 +5,9 @@ $header-height: 100px
   width: 100%
   background-size: cover
   height: 200px
-  background: #26201c url('../images/header-mini.jpg') no-repeat center center
+  background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg') no-repeat center center
   +breakpoint-max($responsive-mobile)
-    background-image: url('../images/header-mini-mob.jpg')
+    background-image: url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mini-mob.jpg')
 
   &:after, &:before
     content: ""
@@ -25,9 +25,9 @@ $header-height: 100px
 
   .home &
     height: 500px
-    background: #26201c url('../images/header.jpg') no-repeat center center
+    background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg') no-repeat center center
     +breakpoint-max($responsive-mobile)
-      background-image: url('../images/header-mob.jpg')
+      background-image: url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mob.jpg')
 
   hgroup
     max-width: $max-container-width
@@ -48,7 +48,7 @@ $header-height: 100px
       text-indent: -1000px
       width: 255px
       height: 41px
-      background: transparent url('../images/logo.png') no-repeat 0 0
+      background: transparent url('https://2016.kyiv.wordcamp.org/files/2016/05/logo.png') no-repeat 0 0
 
 
 
@@ -153,6 +153,8 @@ $header-height: 100px
               background-color: $color-yellow-dark
 
           &.primary
+            &:after
+              display: none
             a
               background-color: $color-blue
               color: #fff
