@@ -16,6 +16,14 @@ body {
 .assistive-text {
   display: none; }
 
+a {
+  color: #1fabff;
+  text-decoration: underline; }
+  a:visited {
+    color: #1fabff; }
+  a:hover {
+    text-decoration: none; }
+
 h1, h2, h3, h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -346,7 +354,7 @@ p {
   color: #ffba00;
   text-transform: uppercase; }
 
-.btn {
+.btn, .comments-area .submit {
   display: inline-block;
   border: 2px solid #ffba00;
   font-family: "Roboto Condensed", sans-serif;
@@ -357,11 +365,15 @@ p {
   padding: 0 25px;
   color: #ffba00;
   cursor: pointer;
-  text-decoration: none; }
-  .btn:hover {
+  text-decoration: none;
+  background: transparent;
+  border-radius: 0;
+  box-sizing: content-box; }
+  .btn:hover, .comments-area .submit:hover {
     text-decoration: none;
-    color: #ffba00; }
-  .btn.btn-primary {
+    color: #ffba00;
+    background: inherit; }
+  .btn.btn-primary, .comments-area .btn-primary.submit {
     background: #ffba00;
     border: none;
     height: 50px;
@@ -664,6 +676,14 @@ p {
       display: none; }
     .comments-area .commentlist li.comment footer {
       position: relative; }
+    .comments-area .commentlist li.comment .reply a {
+      color: transparent; }
+      .comments-area .commentlist li.comment .reply a:before {
+        color: #1fabff;
+        content: "Відповісти";
+        text-decoration: underline; }
+      .comments-area .commentlist li.comment .reply a:hover:before {
+        text-decoration: none; }
     .comments-area .commentlist li.comment .comment-author .avatar {
       position: absolute;
       left: 0;
@@ -683,7 +703,7 @@ p {
       line-height: 1;
       margin-left: 50px; }
     .comments-area .commentlist li.comment .comment-author a {
-      color: #ffba00;
+      color: #303030;
       text-decoration: none; }
     .comments-area .commentlist li.comment .comment-meta {
       margin-left: 50px; }
@@ -694,3 +714,28 @@ p {
       margin: 10px 0 0; }
       .comments-area .commentlist li.comment .comment-content p {
         margin: 0; }
+
+.comments-area .comment-reply-title {
+  color: transparent; }
+  .comments-area .comment-reply-title:before {
+    color: #303030;
+    content: "Залишити коментар"; }
+
+.comments-area .logged-in-as {
+  display: none; }
+
+.comments-area .comment-form-comment label {
+  color: transparent; }
+  .comments-area .comment-form-comment label:before {
+    color: #777777;
+    content: "Коментар"; }
+
+#cancel-comment-reply-link {
+  color: transparent;
+  font-weight: normal; }
+  #cancel-comment-reply-link:before {
+    color: #1fabff;
+    content: "Скасувати";
+    text-decoration: underline; }
+  #cancel-comment-reply-link:hover:before {
+    text-decoration: none; }
