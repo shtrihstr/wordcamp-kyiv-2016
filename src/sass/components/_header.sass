@@ -5,7 +5,7 @@ $header-height: 100px
   width: 100%
   background-size: cover
   height: 200px
-  background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg') no-repeat center center
+  background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg') no-repeat center top
   +breakpoint-max($responsive-mobile)
     background-image: url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mini-mob.jpg')
 
@@ -25,10 +25,12 @@ $header-height: 100px
 
   .home &
     height: 500px
-    background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg') no-repeat center center
+    background: #26201c url('https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg') no-repeat center top
     +breakpoint-max($responsive-mobile)
       background-image: url('https://2016.kyiv.wordcamp.org/files/2016/05/header-mob.jpg')
 
+  .assistive-text
+    display: none
   hgroup
     max-width: $max-container-width
     box-sizing: border-box
@@ -49,7 +51,7 @@ $header-height: 100px
       width: 255px
       height: 41px
       background: transparent url('https://2016.kyiv.wordcamp.org/files/2016/05/logo.png') no-repeat 0 0
-
+      overflow: hidden
 
 
   .site-description
@@ -62,10 +64,11 @@ $header-height: 100px
     top: $header-height
     width: 100%
     background: $color-bg
+    z-index: 99
     .menu-toggle
       padding: 0
       margin: 0
-      text-indent: -1000px
+      text-indent: -10000px
       height: 40px
       width: 40px
       box-sizing: border-box
@@ -96,7 +99,7 @@ $header-height: 100px
       position: relative
       z-index: 70
       li
-        padding: 0
+        padding: 5px 0
         margin: 0
         white-space: nowrap
         text-overflow: ellipsis
@@ -104,7 +107,14 @@ $header-height: 100px
         height: 40px
         line-height: 40px
         font-size: 18px
-
+      a
+        display: block
+        cursor: pointer
+        color: #333
+        text-decoration: none
+        &:hover
+          color: $color-text
+          text-decoration: none
 
   .main-navigation
     position: absolute

@@ -13,6 +13,9 @@ body, input, textarea, select, button {
 body {
   background-color: #ffffff; }
 
+.assistive-text {
+  display: none; }
+
 h1, h2, h3, h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -43,7 +46,7 @@ p {
   width: 100%;
   background-size: cover;
   height: 200px;
-  background: #26201c url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg") no-repeat center center; }
+  background: #26201c url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg") no-repeat center top; }
   @media only screen and (max-width: 640px) {
     .site-header {
       background-image: url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini-mob.jpg"); } }
@@ -61,10 +64,12 @@ p {
     bottom: 2px; }
   .home .site-header {
     height: 500px;
-    background: #26201c url("https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg") no-repeat center center; }
+    background: #26201c url("https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg") no-repeat center top; }
     @media only screen and (max-width: 640px) {
       .home .site-header {
         background-image: url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mob.jpg"); } }
+  .site-header .assistive-text {
+    display: none; }
   .site-header hgroup {
     max-width: 1030px;
     box-sizing: border-box;
@@ -86,7 +91,8 @@ p {
       text-indent: -1000px;
       width: 255px;
       height: 41px;
-      background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/logo.png") no-repeat 0 0; }
+      background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/logo.png") no-repeat 0 0;
+      overflow: hidden; }
   .site-header .site-description {
     display: none; }
   .site-header .main-small-navigation {
@@ -95,11 +101,12 @@ p {
     left: 0;
     top: 100px;
     width: 100%;
-    background: #ffffff; }
+    background: #ffffff;
+    z-index: 99; }
     .site-header .main-small-navigation .menu-toggle {
       padding: 0;
       margin: 0;
-      text-indent: -1000px;
+      text-indent: -10000px;
       height: 40px;
       width: 40px;
       box-sizing: border-box;
@@ -129,7 +136,7 @@ p {
       position: relative;
       z-index: 70; }
       .site-header .main-small-navigation .menu li {
-        padding: 0;
+        padding: 5px 0;
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -137,6 +144,14 @@ p {
         height: 40px;
         line-height: 40px;
         font-size: 18px; }
+      .site-header .main-small-navigation .menu a {
+        display: block;
+        cursor: pointer;
+        color: #333;
+        text-decoration: none; }
+        .site-header .main-small-navigation .menu a:hover {
+          color: #777777;
+          text-decoration: none; }
   .site-header .main-navigation {
     position: absolute;
     height: 100px;
@@ -535,7 +550,7 @@ p {
     text-transform: uppercase;
     margin-bottom: 12px; }
   .wcua-partner-item .wcua-partner-logo {
-    width: 312px;
+    width: 306px;
     box-sizing: border-box;
     border: 3px solid #EEEEEE;
     position: relative;
@@ -559,7 +574,7 @@ p {
   .wcua-partner-item .wcua-partner-desc {
     margin-left: 40px;
     float: left;
-    width: calc(100% - 352px); }
+    width: calc(100% - 346px); }
   .wcua-partner-item .wcua-partner-link {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
@@ -602,7 +617,7 @@ p {
         top: 0;
         font-size: 18px;
         font-weight: bold;
-        text-indent: -1000px;
+        text-indent: -10000px;
         text-transform: uppercase; }
       .blog #content .post .entry-header .entry-date, .single-post #content .post .entry-header .entry-date, .archive #content .post .entry-header .entry-date {
         display: block;
@@ -626,3 +641,56 @@ p {
         .blog #content .post .entry-header .author.vcard a, .single-post #content .post .entry-header .author.vcard a, .archive #content .post .entry-header .author.vcard a {
           color: #dddddd;
           text-decoration: none; }
+  .blog #content .site-navigation, .single-post #content .site-navigation, .archive #content .site-navigation {
+    margin: 48px 0; }
+
+.comments-area .comments-title {
+  display: none; }
+
+.comments-area .commentlist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0; }
+  .comments-area .commentlist ul.children {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 40px; }
+  .comments-area .commentlist li.comment {
+    display: block;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 24px;
+    padding-top: 24px; }
+    .comments-area .commentlist li.comment .says {
+      display: none; }
+    .comments-area .commentlist li.comment footer {
+      position: relative; }
+    .comments-area .commentlist li.comment .comment-author .avatar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0; }
+    .comments-area .commentlist li.comment .comment-author .fn {
+      display: block;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      color: #303030;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1;
+      margin-left: 50px; }
+    .comments-area .commentlist li.comment .comment-author a {
+      color: #ffba00;
+      text-decoration: none; }
+    .comments-area .commentlist li.comment .comment-meta {
+      margin-left: 50px; }
+      .comments-area .commentlist li.comment .comment-meta a {
+        color: #dddddd;
+        text-decoration: none; }
+    .comments-area .commentlist li.comment .comment-content {
+      margin: 10px 0 0; }
+      .comments-area .commentlist li.comment .comment-content p {
+        margin: 0; }

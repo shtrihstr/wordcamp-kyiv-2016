@@ -1,0 +1,56 @@
+.comments-area
+  .comments-title
+    display: none
+  .commentlist
+    list-style: none
+    padding: 0
+    margin: 20px 0 0
+    ul.children
+      list-style: none
+      padding: 0
+      margin: 0 0 0 40px
+
+    li.comment
+      display: block
+      border-top: 1px solid #EEEEEE
+      margin-top: $content-box-margin
+      padding-top: $content-box-margin
+
+      .says
+        display: none
+
+      footer
+        position: relative
+
+      .comment-author
+        .avatar
+          position: absolute
+          left: 0
+          top: 0
+          display: block
+          width: 40px
+          height: 40px
+          margin: 0
+        .fn
+          display: block
+          font-family: $font-contrast
+          text-transform: uppercase
+          color: $color-heading
+          font-style: normal
+          font-weight: bold
+          font-size: 18px
+          line-height: 1
+          margin-left: 50px
+        a
+          color: $color-yellow
+          text-decoration: none
+      .comment-meta
+        margin-left: 50px
+        a
+          color: #dddddd
+          text-decoration: none
+
+      .comment-content
+        margin: 10px 0 0
+        p
+          margin: 0
