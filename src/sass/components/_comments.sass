@@ -22,16 +22,6 @@
       footer
         position: relative
 
-      .reply
-        a
-          color: transparent
-          &:before
-            color: $color-blue
-            content: "Відповісти"
-            text-decoration: underline
-          &:hover:before
-            text-decoration: none
-
       .comment-author
         .avatar
           position: absolute
@@ -66,30 +56,23 @@
           margin: 0
 
   .comment-reply-title
-    color: transparent
-    &:before
-      color: $color-heading
-      content: "Залишити коментар"
+    line-height: 1
+    &:after
+      content: ""
+      display: table
+      clear: both
 
   .logged-in-as
     display: none
 
   .comment-form-comment
     label
-      color: transparent
-      &:before
-        color: $color-text
-        content: "Коментар"
+      color: $color-text
 
   .submit
     @extend .btn
 
 #cancel-comment-reply-link
-  color: transparent
   font-weight: normal
-  &:before
-    color: $color-blue
-    content: "Скасувати"
-    text-decoration: underline
-  &:hover:before
-    text-decoration: none
+  float: right
+  line-height: 24px

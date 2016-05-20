@@ -192,9 +192,9 @@ p {
           float: left;
           margin: 30px 0 0 30px;
           height: 40px; }
-          .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item {
+          .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item, .site-header .main-navigation .menu-navigation-container .menu .menu-item.current_page_parent {
             position: relative; }
-            .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item:after {
+            .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item:after, .site-header .main-navigation .menu-navigation-container .menu .menu-item.current_page_parent:after {
               content: "";
               display: block;
               position: absolute;
@@ -676,14 +676,6 @@ p {
       display: none; }
     .comments-area .commentlist li.comment footer {
       position: relative; }
-    .comments-area .commentlist li.comment .reply a {
-      color: transparent; }
-      .comments-area .commentlist li.comment .reply a:before {
-        color: #1fabff;
-        content: "Відповісти";
-        text-decoration: underline; }
-      .comments-area .commentlist li.comment .reply a:hover:before {
-        text-decoration: none; }
     .comments-area .commentlist li.comment .comment-author .avatar {
       position: absolute;
       left: 0;
@@ -716,26 +708,19 @@ p {
         margin: 0; }
 
 .comments-area .comment-reply-title {
-  color: transparent; }
-  .comments-area .comment-reply-title:before {
-    color: #303030;
-    content: "Залишити коментар"; }
+  line-height: 1; }
+  .comments-area .comment-reply-title:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .comments-area .logged-in-as {
   display: none; }
 
 .comments-area .comment-form-comment label {
-  color: transparent; }
-  .comments-area .comment-form-comment label:before {
-    color: #777777;
-    content: "Коментар"; }
+  color: #777777; }
 
 #cancel-comment-reply-link {
-  color: transparent;
-  font-weight: normal; }
-  #cancel-comment-reply-link:before {
-    color: #1fabff;
-    content: "Скасувати";
-    text-decoration: underline; }
-  #cancel-comment-reply-link:hover:before {
-    text-decoration: none; }
+  font-weight: normal;
+  float: right;
+  line-height: 24px; }
