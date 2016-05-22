@@ -740,32 +740,32 @@ p {
     .error404 .widget_recent_entries ul li {
       padding: 0 0 10px 0; }
 
-.tix-order-summary {
+.tix-order-summary, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table {
   width: 100%; }
-  .tix-order-summary thead {
+  .tix-order-summary thead, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table thead {
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
     color: #dddddd;
     font-weight: bold;
     font-size: 18px; }
-    .tix-order-summary thead td, .tix-order-summary thead th {
+    .tix-order-summary thead td, .tix-order-summary thead th, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table thead td, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table thead th {
       padding: 15px 0;
       border-bottom: 1px solid #eee; }
-  .tix-order-summary tbody {
+  .tix-order-summary tbody, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table tbody {
     font-size: 20px;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     color: #303030;
     line-height: 1; }
-    .tix-order-summary tbody td {
+    .tix-order-summary tbody td, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table tbody td {
       font-weight: bold;
       padding: 25px 0;
       border-bottom: 1px solid #eee; }
-  .tix-order-summary .tix-column-price {
+  .tix-order-summary .tix-column-price, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table .tix-column-price {
     width: 130px; }
-  .tix-order-summary .tix-column-remaining {
+  .tix-order-summary .tix-column-remaining, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table .tix-column-remaining {
     width: 130px; }
-  .tix-order-summary .tix-column-quantity {
+  .tix-order-summary .tix-column-quantity, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table .tix-column-quantity {
     width: 100px; }
 
 td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
