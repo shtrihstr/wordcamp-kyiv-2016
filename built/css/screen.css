@@ -787,6 +787,8 @@ td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td s
     padding: 10px 0;
     margin: 0;
     vertical-align: top; }
+    .tix-attendee-form td input[type="text"], .tix-attendee-form td input[type="email"] {
+      width: 100%; }
   .tix-attendee-form .tix-left {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
@@ -803,6 +805,7 @@ td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td s
   line-height: 1; }
 
 .tix-submit {
+  clear: both;
   text-align: right; }
   .tix-submit br, .tix-submit select {
     display: none; }
