@@ -772,11 +772,9 @@ td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td s
   content: "$ "; }
 
 .tix-attendee-form {
-  max-width: 48.0582524%;
+  max-width: 46.1165%;
   float: left;
   margin-right: 3.883495%; }
-  .tix-attendee-form:nth-child(2n) {
-    margin-right: 0; }
   .tix-attendee-form th {
     font-weight: bold;
     font-family: "Roboto Condensed", sans-serif;
@@ -810,6 +808,7 @@ td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td s
     display: none; }
 
 .tix-receipt-form {
+  clear: both;
   max-width: 600px; }
   .tix-receipt-form td {
     font-weight: lighter; }
