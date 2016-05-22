@@ -1,0 +1,115 @@
+.tix-order-summary
+  width: 100%
+  thead
+    text-transform: uppercase
+    font-family: $font-contrast
+    color: #dddddd
+    font-weight: bold
+    font-size: 18px
+    td, th
+      padding: 15px 0
+      border-bottom: 1px solid #eee
+  tbody
+    font-size: 20px
+    font-family: $font-contrast
+    font-weight: bold
+    color: $color-heading
+    line-height: 1
+    td
+      font-weight: bold
+      padding: 25px 0
+      border-bottom: 1px solid #eee
+
+  .tix-column-price
+    width: 130px
+  .tix-column-remaining
+    width: 130px
+  .tix-column-quantity
+    width: 100px
+
+td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
+  &:before
+    content: "$ "
+
+.tix-attendee-form
+  max-width: 48.0582524%
+  float: left
+  + p
+    display: block
+    float: left
+    width: 3.883495%
+    padding: 0
+    margin: 0
+    height: 1px
+  th
+    font-weight: bold
+    font-family: $font-contrast
+    text-transform: uppercase
+    font-size: 18px
+    border-bottom: 1px solid #eee
+    line-height: 40px
+    color: $color-heading
+  td
+    padding: 10px 0
+    margin: 0
+    vertical-align: top
+  .tix-left
+    font-family: $font-contrast
+    font-size: 18px
+    font-weight: bold
+    line-height: 40px
+  .tix-row-question-79, .tix-row-question-80
+    .tix-left
+      line-height: 1
+
+
+.tix-required-star
+  font-size: 14px
+  font-family: $font-contrast
+  font-weight: bold
+  color: red
+  line-height: 1
+
+.tix-submit
+  text-align: right
+  br, select
+    display: none
+
+.tix-receipt-form
+  max-width: 600px
+  td
+    font-weight: lighter
+
+#tix
+  h2
+    border-bottom: 3px solid #eee
+    position: relative
+    padding-bottom: 13px
+    text-transform: uppercase
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      left: 0
+      bottom: -6px
+      width: 100%
+      height: 1px
+      background: #eee
+
+  input[type="submit"]
+    display: inline-block
+    box-sizing: content-box
+    padding: 0 50px
+    line-height: 40px
+    height: 40px
+    margin: 0
+    text-transform: uppercase
+    font-family: $font-contrast
+    color: $color-bg
+    font-weight: normal
+    font-size: 15px
+    border-radius: 0
+    background: $color-blue
+    border: none
+    box-shadow: none
+    text-shadow: none
