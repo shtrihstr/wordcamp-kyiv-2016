@@ -863,12 +863,25 @@ p {
 
 .tix-column-price, .tix-column-per-ticket {
   width: 130px; }
+  @media only screen and (max-width: 600px) {
+    .tix-column-price, .tix-column-per-ticket {
+      width: auto; } }
 
 .tix-column-remaining {
   width: 130px; }
+  @media only screen and (max-width: 600px) {
+    .tix-column-remaining {
+      width: auto; } }
 
 .tix-column-quantity {
   width: 100px; }
+  @media only screen and (max-width: 600px) {
+    .tix-column-quantity {
+      width: auto; } }
+
+@media only screen and (max-width: 600px) {
+  .tix-attendee-form tbody td {
+    width: auto !important; } }
 
 td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
   content: "$ "; }
@@ -894,7 +907,8 @@ td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td s
     text-transform: uppercase;
     font-size: 18px;
     border-bottom: 1px solid #eee;
-    line-height: 40px;
+    line-height: 20px;
+    padding: 10px 0;
     color: #303030; }
     @media only screen and (max-width: 600px) {
       .tix-attendee-form th {

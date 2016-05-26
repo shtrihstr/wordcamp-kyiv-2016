@@ -50,11 +50,20 @@
 
 .tix-column-price, .tix-column-per-ticket
   width: 130px
+  +breakpoint-max($responsive-mobile)
+    width: auto
 .tix-column-remaining
   width: 130px
+  +breakpoint-max($responsive-mobile)
+    width: auto
 .tix-column-quantity
   width: 100px
+  +breakpoint-max($responsive-mobile)
+    width: auto
 
+.tix-attendee-form tbody td
+  +breakpoint-max($responsive-mobile)
+    width: auto !important
 
 td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
   &:before
@@ -79,7 +88,8 @@ td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
     text-transform: uppercase
     font-size: 18px
     border-bottom: 1px solid #eee
-    line-height: 40px
+    line-height: 20px
+    padding: 10px 0
     color: $color-heading
     +breakpoint-max($responsive-mobile)
       display: block
