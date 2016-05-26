@@ -7,10 +7,11 @@
     font-weight: bold
     font-size: 18px
     +breakpoint-max($responsive-mobile)
-      font-size: 14px
+      display: none
     td, th
       padding: 15px 0
       border-bottom: 1px solid #eee
+
   tbody
     font-size: 20px
     font-family: $font-contrast
@@ -19,10 +20,33 @@
     line-height: 1
     +breakpoint-max($responsive-mobile)
       font-size: 16px
+      display: block
+    tr
+      +breakpoint-max($responsive-mobile)
+        display: block
     td
       font-weight: bold
       padding: 25px 0
       border-bottom: 1px solid #eee
+      +breakpoint-max($responsive-mobile)
+        font-weight: normal
+        display: block
+        width: auto
+        padding: 10px 0
+        &.tix-column-per-ticket
+          &:before
+            content: "За квиток: $"
+        &.tix-column-quantity
+          &:before
+            content: "Кількість: "
+        &.tix-column-price
+          &:before
+            content: "Ціна: "
+        &.tix-column-remaining
+          &:before
+            content: "Залишок: "
+
+
 
 .tix-column-price, .tix-column-per-ticket
   width: 130px
@@ -35,6 +59,8 @@
 td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
   &:before
     content: "$ "
+    +breakpoint-max($responsive-mobile)
+      content: "Загалом: $ "
 
 .tix-attendee-form
   width: 46.1165%
@@ -55,6 +81,9 @@ td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
     border-bottom: 1px solid #eee
     line-height: 40px
     color: $color-heading
+    +breakpoint-max($responsive-mobile)
+      display: block
+  tr, tbody
     +breakpoint-max($responsive-mobile)
       display: block
   td
@@ -96,8 +125,12 @@ td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
 .tix-receipt-form
   clear: both
   max-width: 600px
+  +breakpoint-max($responsive-mobile)
+    display: block
   td
     font-weight: lighter
+    +breakpoint-max($responsive-mobile)
+      display: block
 
 #tix
   h2
