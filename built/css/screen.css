@@ -880,7 +880,7 @@ p {
       width: auto; } }
 
 @media only screen and (max-width: 600px) {
-  .tix-attendee-form tbody td {
+  .tix_tickets_table tbody td {
     width: auto !important; } }
 
 td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
