@@ -18,7 +18,9 @@ body {
 
 a {
   color: #1fabff;
-  text-decoration: underline; }
+  text-decoration: underline;
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out; }
   a:visited {
     color: #1fabff; }
   a:hover {
@@ -32,6 +34,11 @@ h1, h2, h3, h4 {
   padding: 0;
   line-height: 1.1;
   color: #303030; }
+  h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
+    color: #303030;
+    text-decoration: none; }
+    h1 a:hover, h1 a:visited:hover, h2 a:hover, h2 a:visited:hover, h3 a:hover, h3 a:visited:hover, h4 a:hover, h4 a:visited:hover {
+      text-decoration: underline; }
 
 h1 {
   font-size: 40px;
@@ -697,9 +704,6 @@ p {
         font-size: 24px; }
         .blog #content .post .entry-header .entry-title:after, .single-post #content .post .entry-header .entry-title:after, .archive #content .post .entry-header .entry-title:after {
           display: none; }
-        .blog #content .post .entry-header .entry-title a, .single-post #content .post .entry-header .entry-title a, .archive #content .post .entry-header .entry-title a {
-          color: inherit;
-          text-decoration: none; }
       .blog #content .post .entry-header .entry-meta, .single-post #content .post .entry-header .entry-meta, .archive #content .post .entry-header .entry-meta {
         font-family: "Roboto Condensed", sans-serif;
         position: absolute;
@@ -880,7 +884,7 @@ p {
       width: auto; } }
 
 @media only screen and (max-width: 600px) {
-  .tix_tickets_table tbody td {
+  .tix_tickets_table td {
     width: auto !important; } }
 
 td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
