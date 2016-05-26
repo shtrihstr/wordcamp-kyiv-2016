@@ -146,7 +146,7 @@ p {
       right: 20px;
       top: -70px; }
       .site-header .main-small-navigation .menu-toggle:before {
-        content: '\2630';
+        content: '☰';
         position: absolute;
         display: block;
         text-indent: 0;
