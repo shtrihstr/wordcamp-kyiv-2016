@@ -6,6 +6,8 @@
     color: #dddddd
     font-weight: bold
     font-size: 18px
+    +breakpoint-max($responsive-mobile)
+      font-size: 14px
     td, th
       padding: 15px 0
       border-bottom: 1px solid #eee
@@ -15,26 +17,35 @@
     font-weight: bold
     color: $color-heading
     line-height: 1
+    +breakpoint-max($responsive-mobile)
+      font-size: 16px
     td
       font-weight: bold
       padding: 25px 0
       border-bottom: 1px solid #eee
 
-  .tix-column-price
-    width: 130px
-  .tix-column-remaining
-    width: 130px
-  .tix-column-quantity
-    width: 100px
+.tix-column-price, .tix-column-per-ticket
+  width: 130px
+.tix-column-remaining
+  width: 130px
+.tix-column-quantity
+  width: 100px
+
 
 td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
   &:before
     content: "$ "
 
 .tix-attendee-form
-  max-width: 46.1165%
+  width: 46.1165%
   float: left
   margin-right: 3.883495%
+  +breakpoint-max($responsive-tablet)
+    float: none
+    width: 100%
+    margin-right: 0
+  +breakpoint-max($responsive-mobile)
+    display: block
 
   th
     font-weight: bold
@@ -44,10 +55,15 @@ td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
     border-bottom: 1px solid #eee
     line-height: 40px
     color: $color-heading
+    +breakpoint-max($responsive-mobile)
+      display: block
   td
     padding: 10px 0
     margin: 0
     vertical-align: top
+    +breakpoint-max($responsive-mobile)
+      display: block
+      padding: 0
     input[type="text"], input[type="email"]
       width: 100%
 
@@ -56,9 +72,12 @@ td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
     font-size: 18px
     font-weight: bold
     line-height: 40px
+    +breakpoint-max($responsive-mobile)
+      line-height: 1.5
+      margin-top: 20px
   .tix-row-question-79, .tix-row-question-80
     .tix-left
-      line-height: 1
+      line-height: 1.1
 
 
 .tix-required-star

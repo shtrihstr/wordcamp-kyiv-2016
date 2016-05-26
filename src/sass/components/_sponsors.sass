@@ -2,6 +2,10 @@
   border-bottom: 1px solid #eeeeee
   padding-bottom: 40px
   margin-top: 40px
+  +breakpoint-max($responsive-mobile)
+    padding-bottom: 0px
+    margin-top: 20px
+
   &:after
     content: ""
     display: table
@@ -22,6 +26,10 @@
     left: 0
     top: 0
     float: left
+    +breakpoint-max($responsive-mobile)
+      float: none
+      width: 100%
+
     &:before
       content: ""
       display: block
@@ -41,6 +49,11 @@
     margin-left: 40px
     float: left
     width: calc(100% - #{40px + 306px})
+    +breakpoint-max($responsive-mobile)
+      width: auto
+      margin: 20px 0 0
+      float: none
+      padding: 0 6px
 
   .wcua-partner-link
     font-family: $font-contrast
