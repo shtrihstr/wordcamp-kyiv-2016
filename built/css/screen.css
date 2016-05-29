@@ -857,7 +857,7 @@ p {
           width: auto;
           padding: 10px 0; }
           .tix-order-summary tbody td.tix-column-per-ticket:before, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table tbody td.tix-column-per-ticket:before {
-            content: "За квиток: $"; }
+            content: "За квиток: "; }
           .tix-order-summary tbody td.tix-column-quantity:before, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table tbody td.tix-column-quantity:before {
             content: "Кількість: "; }
           .tix-order-summary tbody td.tix-column-price:before, .tix-js:not(.tix-has-dynamic-receipts) .tix_tickets_table tbody td.tix-column-price:before {
@@ -887,11 +887,9 @@ p {
   .tix_tickets_table td {
     width: auto !important; } }
 
-td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
-  content: "$ "; }
-  @media only screen and (max-width: 600px) {
-    td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
-      content: "Загалом: $ "; } }
+@media only screen and (max-width: 600px) {
+  td.tix-column-price:before, td.tix-column-per-ticket:before, .tix-row-total td strong:before {
+    content: "Загалом: "; } }
 
 .tix-attendee-form {
   width: 46.1165%;

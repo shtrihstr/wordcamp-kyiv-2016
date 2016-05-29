@@ -35,7 +35,7 @@
         padding: 10px 0
         &.tix-column-per-ticket
           &:before
-            content: "За квиток: $"
+            content: "За квиток: "
         &.tix-column-quantity
           &:before
             content: "Кількість: "
@@ -67,9 +67,8 @@
 
 td.tix-column-price, td.tix-column-per-ticket, .tix-row-total td strong
   &:before
-    content: "$ "
     +breakpoint-max($responsive-mobile)
-      content: "Загалом: $ "
+      content: "Загалом: "
 
 .tix-attendee-form
   width: 46.1165%
