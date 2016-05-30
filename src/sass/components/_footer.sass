@@ -66,8 +66,10 @@
   .widget
     margin: 0
 
-
 #footer-widget-3
+  display: block
+  +breakpoint-max($responsive-tablet)
+    display: none
   position: absolute
   z-index: 5
   right: 0

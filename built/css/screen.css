@@ -421,10 +421,14 @@ p {
     margin: 0; }
 
 #footer-widget-3 {
+  display: block;
   position: absolute;
   z-index: 5;
   right: 0;
   top: 0; }
+  @media only screen and (max-width: 1030px) {
+    #footer-widget-3 {
+      display: none; } }
   #footer-widget-3 .widget {
     margin-bottom: 10px; }
 
