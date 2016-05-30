@@ -568,15 +568,6 @@ p {
       width: calc(50% - 10px); }
       .wcb_widget_sponsors .sponsor-logo:nth-child(2n) {
         margin-right: 0; } }
-  .wcb_widget_sponsors .sponsor-logo:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    border: 1px solid #EEEEEE; }
   .wcb_widget_sponsors .sponsor-logo img {
     display: block;
     width: 100%;
@@ -586,6 +577,15 @@ p {
     height: 0;
     padding: 0 0 70%;
     overflow: hidden; }
+    .wcb_widget_sponsors .sponsor-logo a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      border: 1px solid #EEEEEE; }
 
 .wcb_widget_sponsors .sponsor-level:after {
   display: table;
