@@ -492,6 +492,8 @@ p {
     text-decoration: none;
     color: #ffba00;
     background: inherit; }
+  .btn:visited, .comments-area .submit:visited {
+    color: #ffba00; }
   .btn.btn-primary, .comments-area .btn-primary.submit {
     background: #ffba00;
     border: none;
@@ -502,9 +504,12 @@ p {
     font-size: 16px;
     color: #fff; }
     .btn.btn-primary:hover, .comments-area .btn-primary.submit:hover {
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      color: #fff; }
     .btn.btn-primary:active, .comments-area .btn-primary.submit:active {
       box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
+    .btn.btn-primary:visited, .comments-area .btn-primary.submit:visited {
+      color: #fff; }
 
 .site-content .light {
   font-family: "Roboto Condensed", sans-serif;
