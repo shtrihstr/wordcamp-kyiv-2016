@@ -171,7 +171,7 @@ p {
       margin: 0;
       list-style: none;
       border-top: 2px solid #ffba00;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
       position: relative;
       z-index: 70; }
       .site-header .main-small-navigation .menu li {
@@ -235,7 +235,7 @@ p {
           .site-header .main-navigation .menu-navigation-container .menu {
             float: none; } }
         .site-header .main-navigation .menu-navigation-container .menu .sub-menu {
-          box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
           float: none;
           display: none;
           position: absolute;
