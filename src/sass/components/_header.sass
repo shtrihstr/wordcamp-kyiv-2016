@@ -113,7 +113,7 @@ $header-mob-height: 215px
         height: 100%
         line-height: 38px
         font-size: 38px
-        font-family: "Helvetica Neue","Helvetica","Roboto","Arial",sans-serif
+        font-family: "Helvetica Neue","Helvetica","Arial",sans-serif
         text-align: right
         color: $color-blue
 
@@ -122,21 +122,26 @@ $header-mob-height: 215px
       margin: 0
       list-style: none
       border-top: 2px solid $color-yellow
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8)
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
       position: relative
       z-index: 70
       li
         padding: 5px 0
         margin: 0
-        white-space: nowrap
-        text-overflow: ellipsis
-        overflow: hidden
-        height: 40px
         line-height: 40px
         font-size: 18px
+        a
+          display: block
+          text-overflow: ellipsis
+          overflow: hidden
+          height: 40px
+          white-space: nowrap
+
         &.current-menu-item, &.current_page_parent
           a
             color: $color-yellow
+
+
       a
         display: block
         cursor: pointer
@@ -185,7 +190,7 @@ $header-mob-height: 215px
           float: none
 
         .sub-menu
-          box-shadow: none
+          box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2)
           float: none
           display: none
           position: absolute
@@ -194,11 +199,16 @@ $header-mob-height: 215px
           z-index: 99
           background: $color-bg
           padding-bottom: 10px
+          +breakpoint-max($responsive-tablet)
+            left: -15px
 
           .sub-menu
             display: none
           .menu-item
             margin: 0 30px
+            +breakpoint-max($responsive-tablet)
+              margin: 0 15px
+              display: block
 
           a
             width: auto
