@@ -270,9 +270,9 @@ p {
               margin: 0 15px;
               float: none;
               display: inline-block; } }
-          .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item, .site-header .main-navigation .menu-navigation-container .menu .menu-item.current_page_parent {
+          .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item {
             position: relative; }
-            .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item:after, .site-header .main-navigation .menu-navigation-container .menu .menu-item.current_page_parent:after {
+            .site-header .main-navigation .menu-navigation-container .menu .menu-item.current-menu-item:after {
               content: "";
               display: block;
               position: absolute;
