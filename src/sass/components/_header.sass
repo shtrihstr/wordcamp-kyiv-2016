@@ -184,6 +184,30 @@ $header-mob-height: 215px
         +breakpoint-max($responsive-tablet)
           float: none
 
+        .sub-menu
+          box-shadow: none
+          float: none
+          display: none
+          position: absolute
+          top: 100%
+          left: -30px
+          z-index: 99
+          background: $color-bg
+          padding-bottom: 10px
+
+          .sub-menu
+            display: none
+          .menu-item
+            margin: 0 30px
+
+          a
+            width: auto
+            white-space: nowrap
+
+
+        .menu-item-has-children
+          position: relative
+
         .menu-item
           display: block
           float: left
@@ -227,6 +251,10 @@ $header-mob-height: 215px
                 text-decoration: none
               &:active
                 box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .3)
+
+          &:hover
+            .sub-menu
+              display: block
 
         a
           display: block

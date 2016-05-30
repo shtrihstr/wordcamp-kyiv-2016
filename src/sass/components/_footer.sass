@@ -13,31 +13,26 @@
     +breakpoint-max($responsive-tablet)
       padding-left: $screen-padding-mobile
       padding-right: $screen-padding-mobile
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      right: 0
-      bottom: 0
-      width: 288px
-      height: 50px
-      background: transparent url('https://2016.kyiv.wordcamp.org/files/2016/05/logo-footer.png') no-repeat 0 0
-      +breakpoint-max($responsive-tablet)
-        display: none
+
     a
-      color: $color-yellow
-      text-decoration: none
       margin-right: 25px
       +breakpoint-max($responsive-mobile)
         display: block
         line-height: 2
         text-align: center
-      &:hover
-        text-decoration: underline
+
+  a
+    color: $color-yellow
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+    &:visited
+      color: $color-yellow
 
 #footer-widgets
   max-width: $max-container-width
   box-sizing: border-box
+  position: relative
   margin: 0 auto 20px
   font-family: $font-contrast
   +breakpoint-max($responsive-tablet)
@@ -48,6 +43,8 @@
   .menu-navigation-container
     line-height: 1.1
     font-size: 18px
+    .sub-menu
+      display: none
     ul
       padding: 0
       margin: 0
@@ -68,3 +65,25 @@
 
   .widget
     margin: 0
+
+
+#footer-widget-3
+  position: absolute
+  right: 0
+  top: 0
+  .widget
+    margin-bottom: 20px
+
+.widget_wpcom_social_media_icons_widget
+  ul
+    margin-bottom: 0
+  .genericon
+    font-size: 32px
+    color: $color-blue
+    &:hover
+      color: inherit
+      text-decoration: none
+    &:visited
+      color: inherit
+  .screen-reader-text
+    display: none

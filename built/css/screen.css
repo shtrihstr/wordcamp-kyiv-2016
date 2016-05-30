@@ -232,6 +232,25 @@ p {
         @media only screen and (max-width: 1030px) {
           .site-header .main-navigation .menu-navigation-container .menu {
             float: none; } }
+        .site-header .main-navigation .menu-navigation-container .menu .sub-menu {
+          box-shadow: none;
+          float: none;
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: -30px;
+          z-index: 99;
+          background: #ffffff;
+          padding-bottom: 10px; }
+          .site-header .main-navigation .menu-navigation-container .menu .sub-menu .sub-menu {
+            display: none; }
+          .site-header .main-navigation .menu-navigation-container .menu .sub-menu .menu-item {
+            margin: 0 30px; }
+          .site-header .main-navigation .menu-navigation-container .menu .sub-menu a {
+            width: auto;
+            white-space: nowrap; }
+        .site-header .main-navigation .menu-navigation-container .menu .menu-item-has-children {
+          position: relative; }
         .site-header .main-navigation .menu-navigation-container .menu .menu-item {
           display: block;
           float: left;
@@ -275,6 +294,8 @@ p {
               text-decoration: none; }
             .site-header .main-navigation .menu-navigation-container .menu .menu-item.primary a:active {
               box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
+          .site-header .main-navigation .menu-navigation-container .menu .menu-item:hover .sub-menu {
+            display: block; }
         .site-header .main-navigation .menu-navigation-container .menu a {
           display: block;
           cursor: pointer;
@@ -337,33 +358,25 @@ p {
       .site-footer .site-info {
         padding-left: 20px;
         padding-right: 20px; } }
-    .site-footer .site-info:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 288px;
-      height: 50px;
-      background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/logo-footer.png") no-repeat 0 0; }
-      @media only screen and (max-width: 1030px) {
-        .site-footer .site-info:after {
-          display: none; } }
     .site-footer .site-info a {
-      color: #ffba00;
-      text-decoration: none;
       margin-right: 25px; }
       @media only screen and (max-width: 600px) {
         .site-footer .site-info a {
           display: block;
           line-height: 2;
           text-align: center; } }
-      .site-footer .site-info a:hover {
-        text-decoration: underline; }
+  .site-footer a {
+    color: #ffba00;
+    text-decoration: none; }
+    .site-footer a:hover {
+      text-decoration: underline; }
+    .site-footer a:visited {
+      color: #ffba00; }
 
 #footer-widgets {
   max-width: 1030px;
   box-sizing: border-box;
+  position: relative;
   margin: 0 auto 20px;
   font-family: "Roboto Condensed", sans-serif; }
   @media only screen and (max-width: 1030px) {
@@ -376,6 +389,8 @@ p {
   #footer-widgets .menu-navigation-container {
     line-height: 1.1;
     font-size: 18px; }
+    #footer-widgets .menu-navigation-container .sub-menu {
+      display: none; }
     #footer-widgets .menu-navigation-container ul {
       padding: 0;
       margin: 0;
@@ -395,6 +410,28 @@ p {
         text-decoration: underline; }
   #footer-widgets .widget {
     margin: 0; }
+
+#footer-widget-3 {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  #footer-widget-3 .widget {
+    margin-bottom: 20px; }
+
+.widget_wpcom_social_media_icons_widget ul {
+  margin-bottom: 0; }
+
+.widget_wpcom_social_media_icons_widget .genericon {
+  font-size: 32px;
+  color: #1fabff; }
+  .widget_wpcom_social_media_icons_widget .genericon:hover {
+    color: inherit;
+    text-decoration: none; }
+  .widget_wpcom_social_media_icons_widget .genericon:visited {
+    color: inherit; }
+
+.widget_wpcom_social_media_icons_widget .screen-reader-text {
+  display: none; }
 
 #primary {
   max-width: 1030px;
