@@ -682,8 +682,7 @@ p {
   padding-bottom: 40px;
   margin-top: 40px; }
   .wcua-partner-item:last-child {
-    border-bottom: none;
-    margin-bottom: 20px; }
+    border-bottom: none; }
   @media only screen and (max-width: 600px) {
     .wcua-partner-item {
       padding-bottom: 0px;
@@ -744,6 +743,9 @@ p {
     .wcua-partner-item .wcua-partner-link a {
       color: #dddddd;
       text-decoration: none; }
+
+.wcua-partner-item + .entry-header {
+  margin-top: 40px; }
 
 .blog #content, .single-post #content, .archive #content {
   max-width: 680px;
