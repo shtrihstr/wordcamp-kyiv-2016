@@ -681,6 +681,9 @@ p {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 40px;
   margin-top: 40px; }
+  .wcua-partner-item:last-child {
+    border-bottom: none;
+    margin-bottom: 20px; }
   @media only screen and (max-width: 600px) {
     .wcua-partner-item {
       padding-bottom: 0px;
