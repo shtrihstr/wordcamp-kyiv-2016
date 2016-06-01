@@ -489,7 +489,8 @@ p {
   border-radius: 0;
   box-sizing: content-box;
   text-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  outline: none; }
   .btn:hover, .comments-area .submit:hover {
     text-decoration: none;
     color: #ffba00;
@@ -501,6 +502,8 @@ p {
     color: #ffba00;
     border: 2px solid #ffba00;
     box-shadow: none; }
+  .btn:focus, .comments-area .submit:focus {
+    outline: 0; }
   .btn.btn-primary, .comments-area .btn-primary.submit {
     background: #ffba00;
     border: none;
@@ -518,13 +521,15 @@ p {
       box-shadow: none; }
     .btn.btn-primary:active, .comments-area .btn-primary.submit:active {
       box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.3);
-      border: none; }
+      border: none;
+      outline: none; }
     .btn.btn-primary:visited, .comments-area .btn-primary.submit:visited {
       color: #fff;
       border: none;
       box-shadow: none; }
 
 .btn-blue, .contact-submit .pushbutton-wide, #tix input[type="submit"] {
+  outline: none;
   display: inline-block;
   box-sizing: content-box;
   padding: 0 50px;
@@ -550,10 +555,13 @@ p {
     color: #ffffff; }
   .btn-blue:active, .contact-submit .pushbutton-wide:active, #tix input[type="submit"]:active {
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
     border: none;
     text-shadow: none;
     background: #1fabff;
     color: #ffffff; }
+  .btn-blue:focus, .contact-submit .pushbutton-wide:focus, #tix input[type="submit"]:focus {
+    outline: 0; }
 
 .site-content .light {
   font-family: "Roboto Condensed", sans-serif;
