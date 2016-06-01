@@ -91,17 +91,17 @@ p {
       z-index: 0;
       content: "";
       position: absolute;
-      background-size: cover;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg") no-repeat center top; }
+      background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini.jpg") no-repeat center top;
+      background-size: cover; }
       @media only screen and (max-width: 600px) {
         .site-header hgroup:before {
           background-image: url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mini-mob.jpg"); } }
   .home .site-header hgroup:before {
-    background: transparent url("https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg") no-repeat center top; }
+    background-image: url("https://2016.kyiv.wordcamp.org/files/2016/05/header.jpg"); }
     @media only screen and (max-width: 600px) {
       .home .site-header hgroup:before {
         background-image: url("https://2016.kyiv.wordcamp.org/files/2016/05/header-mob.jpg"); } }
