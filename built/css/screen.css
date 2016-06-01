@@ -598,7 +598,7 @@ p {
 .wp-caption-text {
   font-family: "Roboto Condensed", sans-serif; }
 
-.wcb_widget_sponsors .sponsor-logo {
+.wcb_widget_partners .partner-logo {
   display: block;
   cursor: pointer;
   overflow: hidden;
@@ -609,27 +609,27 @@ p {
   padding: 3px;
   float: left; }
   @media only screen and (min-width: 601px) {
-    .wcb_widget_sponsors .sponsor-logo {
+    .wcb_widget_partners .partner-logo {
       width: 21.3592233%;
       margin-right: 4.854369%; }
-      .wcb_widget_sponsors .sponsor-logo:nth-child(4n) {
+      .wcb_widget_partners .partner-logo:nth-child(4n) {
         margin-right: 0; } }
   @media only screen and (max-width: 600px) {
-    .wcb_widget_sponsors .sponsor-logo {
+    .wcb_widget_partners .partner-logo {
       margin-right: 20px;
       width: calc(50% - 10px); }
-      .wcb_widget_sponsors .sponsor-logo:nth-child(2n) {
+      .wcb_widget_partners .partner-logo:nth-child(2n) {
         margin-right: 0; } }
-  .wcb_widget_sponsors .sponsor-logo img {
+  .wcb_widget_partners .partner-logo img {
     display: block;
     width: 100%;
     height: auto; }
-  .wcb_widget_sponsors .sponsor-logo a {
+  .wcb_widget_partners .partner-logo a {
     display: block;
     height: 0;
     padding: 0 0 70%;
     overflow: hidden; }
-    .wcb_widget_sponsors .sponsor-logo a:before {
+    .wcb_widget_partners .partner-logo a:before {
       content: "";
       display: block;
       position: absolute;
@@ -639,26 +639,26 @@ p {
       bottom: 2px;
       border: 1px solid #EEEEEE; }
 
-.wcb_widget_sponsors .sponsor-level:after {
+.wcb_widget_partners .partner-level:after {
   display: table;
   content: "";
   clear: both; }
 
 @media only screen and (min-width: 601px) {
-  .wcb_widget_sponsors .sponsor-level.super .sponsor-logo {
+  .wcb_widget_partners .partner-level.super .partner-logo {
     width: 30.097%; }
-    .wcb_widget_sponsors .sponsor-level.super .sponsor-logo:nth-child(3n) {
+    .wcb_widget_partners .partner-level.super .partner-logo:nth-child(3n) {
       margin-right: 0; } }
 
 @media only screen and (max-width: 600px) {
-  .wcb_widget_sponsors .sponsor-level.super .sponsor-logo {
+  .wcb_widget_partners .partner-level.super .partner-logo {
     width: 100%;
     margin-right: 0; } }
 
-.wcb_widget_sponsors .sponsor-level-title {
+.wcb_widget_partners .partner-level-title {
   display: none; }
 
-.wcb_widget_sponsors .widget-title {
+.wcb_widget_partners .widget-title {
   margin-bottom: 40px; }
 
 .wpc-ua-speakers {
