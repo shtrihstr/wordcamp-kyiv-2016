@@ -802,6 +802,50 @@ p {
 .wcua-partner-item + .entry-header {
   margin-top: 40px; }
 
+.wcua-micro-partners {
+  margin-top: 40px; }
+  .wcua-micro-partners:after {
+    content: "";
+    display: table;
+    clear: left; }
+  .wcua-micro-partners .wcua-micro-partner-item {
+    float: left;
+    border: 3px solid #EEEEEE;
+    padding: 2px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+    min-height: 70px;
+    white-space: nowrap; }
+    @media only screen and (max-width: 600px) {
+      .wcua-micro-partners .wcua-micro-partner-item {
+        float: none;
+        margin-right: 0; } }
+    .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-img {
+      border: 1px solid #EEEEEE;
+      float: left;
+      width: 68px; }
+      .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-img img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc {
+      float: left;
+      padding: 10px 15px 0; }
+      .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc h2 {
+        margin-top: 0;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin-bottom: 2px; }
+      .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc .wcua-micro-partner-link {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.1; }
+        .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc .wcua-micro-partner-link a {
+          color: #dddddd;
+          text-decoration: none; }
+
 .blog #content, .single-post #content, .archive #content {
   max-width: 680px;
   margin-left: auto;
@@ -1109,11 +1153,19 @@ input[type="text"], input[type="email"] {
   padding: 0 10px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
-  margin: 0; }
+  margin: 0;
+  box-shadow: none; }
+  input[type="text"]:focus, input[type="email"]:focus {
+    box-shadow: none;
+    outline: none; }
 
 textarea {
   border: 1px solid #dddddd;
   border-radius: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
-  resize: vertical; }
+  resize: vertical;
+  box-shadow: none; }
+  textarea:focus {
+    box-shadow: none;
+    outline: none; }

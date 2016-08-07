@@ -71,3 +71,54 @@
 
 .wcua-partner-item + .entry-header
   margin-top: 40px
+
+
+.wcua-micro-partners
+  margin-top: 40px
+  &:after
+    content: ""
+    display: table
+    clear: left
+  .wcua-micro-partner-item
+    float: left
+    border: 3px solid #EEEEEE
+    padding: 2px
+    margin: 0 20px 20px 0
+    overflow: hidden
+    min-height: 70px
+    white-space: nowrap
+    +breakpoint-max($responsive-mobile)
+      float: none
+      margin-right: 0
+
+    .wcua-micro-partner-img
+      border: 1px solid #EEEEEE
+      float: left
+      width: 68px
+      img
+        display: block
+        width: 100%
+        height: auto
+
+    .wcua-micro-partner-desc
+      float: left
+      padding: 10px 15px 0
+
+      h2
+        margin-top: 0
+        line-height: 1.1
+        text-transform: uppercase
+        margin-bottom: 2px
+
+      .wcua-micro-partner-link
+        font-family: $font-contrast
+        font-size: 18px
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.1
+        a
+          color: #dddddd
+          text-decoration: none
+
+
+
