@@ -830,15 +830,16 @@ p {
         height: auto; }
     .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc {
       float: left;
-      padding: 10px 15px 0; }
+      padding: 16px 15px 0; }
       .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc h2 {
         margin-top: 0;
         line-height: 1.1;
         text-transform: uppercase;
-        margin-bottom: 2px; }
+        margin-bottom: 2px;
+        font-size: 18px; }
       .wcua-micro-partners .wcua-micro-partner-item .wcua-micro-partner-desc .wcua-micro-partner-link {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.1; }
