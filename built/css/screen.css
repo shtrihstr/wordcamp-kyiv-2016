@@ -1212,9 +1212,9 @@ textarea {
       .wcpt-schedule tbody td .wcpt-session-speakers {
         font-size: 15px; } }
 
-.wcpt-schedule tbody tr.global-session td {
+.wcpt-schedule tbody tr.global-session-tmp td {
   position: relative; }
-  .wcpt-schedule tbody tr.global-session td:after {
+  .wcpt-schedule tbody tr.global-session-tmp td:after {
     content: "";
     display: block;
     position: absolute;
