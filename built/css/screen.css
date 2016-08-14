@@ -1188,7 +1188,9 @@ textarea {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   padding: 20px 0 20px 15px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0 !important;
+  display: table-cell !important; }
   .wcpt-schedule tbody td.wcpt-time {
     font-size: 24px;
     color: #dddddd; }
