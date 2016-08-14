@@ -1212,9 +1212,9 @@ textarea {
       .wcpt-schedule tbody td .wcpt-session-speakers {
         font-size: 15px; } }
 
-.wcpt-schedule tbody tr.global-session-tmp td {
+.wcpt-schedule tbody tr.wcpt-time-0845 td, .wcpt-schedule tbody tr.wcpt-time-0945 td, .wcpt-schedule tbody tr.wcpt-time-1125 td, .wcpt-schedule tbody tr.wcpt-time-1315 td, .wcpt-schedule tbody tr.wcpt-time-1610 td, .wcpt-schedule tbody tr.wcpt-time-1800 td, .wcpt-schedule tbody tr.wcpt-time-1055 td, .wcpt-schedule tbody tr.wcpt-time-1240 td, .wcpt-schedule tbody tr.wcpt-time-1525 td, .wcpt-schedule tbody tr.wcpt-time-1710 td, .wcpt-schedule tbody tr.wcpt-time-1900 td {
   position: relative; }
-  .wcpt-schedule tbody tr.global-session-tmp td:after {
+  .wcpt-schedule tbody tr.wcpt-time-0845 td:after, .wcpt-schedule tbody tr.wcpt-time-0945 td:after, .wcpt-schedule tbody tr.wcpt-time-1125 td:after, .wcpt-schedule tbody tr.wcpt-time-1315 td:after, .wcpt-schedule tbody tr.wcpt-time-1610 td:after, .wcpt-schedule tbody tr.wcpt-time-1800 td:after, .wcpt-schedule tbody tr.wcpt-time-1055 td:after, .wcpt-schedule tbody tr.wcpt-time-1240 td:after, .wcpt-schedule tbody tr.wcpt-time-1525 td:after, .wcpt-schedule tbody tr.wcpt-time-1710 td:after, .wcpt-schedule tbody tr.wcpt-time-1900 td:after {
     content: "";
     display: block;
     position: absolute;
