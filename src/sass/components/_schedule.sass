@@ -1,0 +1,55 @@
+.wcpt-schedule
+
+  .wcpt-time
+    width: 55px
+    +breakpoint-min($responsive-mobile)
+      width: 120px
+
+  thead th
+    display: none
+
+  tbody
+    td
+      border-bottom: 1px solid #dddddd
+      line-height: 1.1
+      font-family: $font-contrast
+      font-weight: bold
+      padding: 20px 0 20px 15px
+      vertical-align: middle
+
+      &.wcpt-time
+        font-size: 24px
+        color: #dddddd
+        +breakpoint-min($responsive-mobile)
+          font-size: 48px
+
+      .wcpt-session-title
+        font-size: 18px
+        color: $color-heading
+        +breakpoint-min($responsive-mobile)
+          font-size: 20px
+        &:after
+          content: "\a"
+          white-space: pre
+
+      .wcpt-session-speakers
+        font-size: 14px
+        font-style: italic
+        color: $color-yellow
+        +breakpoint-min($responsive-mobile)
+          font-size: 15px
+
+    tr
+      &.global-session
+        td
+          position: relative
+          &:after
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            right: 0
+            top: 8px
+            bottom: 8px
+            background-color: #f7f7f7
+            z-index: -1

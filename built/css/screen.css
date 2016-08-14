@@ -589,11 +589,11 @@ p {
 
 .entry-header, .wcb_widget_sponsors {
   margin-top: 0; }
-  .entry-header h1, .wcb_widget_sponsors h1 {
+  .entry-header h1, .entry-header h2, .wcb_widget_sponsors h1, .wcb_widget_sponsors h2 {
     border-bottom: 3px solid #eee;
     position: relative;
     padding-bottom: 18px; }
-    .entry-header h1:after, .wcb_widget_sponsors h1:after {
+    .entry-header h1:after, .entry-header h2:after, .wcb_widget_sponsors h1:after, .wcb_widget_sponsors h2:after {
       content: "";
       display: block;
       position: absolute;
@@ -602,6 +602,8 @@ p {
       width: 100%;
       height: 1px;
       background: #eee; }
+  .entry-header h2, .wcb_widget_sponsors h2 {
+    margin-bottom: 0; }
 
 .wp-caption-text {
   font-family: "Roboto Condensed", sans-serif; }
@@ -1170,3 +1172,55 @@ textarea {
   textarea:focus {
     box-shadow: none;
     outline: none; }
+
+.wcpt-schedule .wcpt-time {
+  width: 55px; }
+  @media only screen and (min-width: 601px) {
+    .wcpt-schedule .wcpt-time {
+      width: 120px; } }
+
+.wcpt-schedule thead th {
+  display: none; }
+
+.wcpt-schedule tbody td {
+  border-bottom: 1px solid #dddddd;
+  line-height: 1.1;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  padding: 20px 0 20px 15px;
+  vertical-align: middle; }
+  .wcpt-schedule tbody td.wcpt-time {
+    font-size: 24px;
+    color: #dddddd; }
+    @media only screen and (min-width: 601px) {
+      .wcpt-schedule tbody td.wcpt-time {
+        font-size: 48px; } }
+  .wcpt-schedule tbody td .wcpt-session-title {
+    font-size: 18px;
+    color: #303030; }
+    @media only screen and (min-width: 601px) {
+      .wcpt-schedule tbody td .wcpt-session-title {
+        font-size: 20px; } }
+    .wcpt-schedule tbody td .wcpt-session-title:after {
+      content: "\a";
+      white-space: pre; }
+  .wcpt-schedule tbody td .wcpt-session-speakers {
+    font-size: 14px;
+    font-style: italic;
+    color: #ffba00; }
+    @media only screen and (min-width: 601px) {
+      .wcpt-schedule tbody td .wcpt-session-speakers {
+        font-size: 15px; } }
+
+.wcpt-schedule tbody tr.global-session td {
+  position: relative; }
+  .wcpt-schedule tbody tr.global-session td:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    bottom: 8px;
+    background-color: #f7f7f7;
+    z-index: -1; }
