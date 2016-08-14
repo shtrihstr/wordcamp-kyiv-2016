@@ -26,6 +26,8 @@
       .wcpt-session-title
         font-size: 18px
         color: $color-heading
+        display: inline !important
+        padding: 0 !important
         +breakpoint-min($responsive-mobile)
           font-size: 20px
         &:after
@@ -36,10 +38,15 @@
         font-size: 14px
         font-style: italic
         color: $color-yellow
+        display: inline !important
+        padding: 0 !important
         +breakpoint-min($responsive-mobile)
           font-size: 15px
-
+        
     tr
+      border: none !important
+      margin: 0 !important
+      display: table-row !important
       &.wcpt-time-0845, &.wcpt-time-0945, &.wcpt-time-1125, &.wcpt-time-1315, &.wcpt-time-1610, &.wcpt-time-1800, &.wcpt-time-1055, &.wcpt-time-1240, &.wcpt-time-1525, &.wcpt-time-1710, &.wcpt-time-1900
         td
           position: relative

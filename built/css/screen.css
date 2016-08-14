@@ -1197,7 +1197,9 @@ textarea {
         font-size: 48px; } }
   .wcpt-schedule tbody td .wcpt-session-title {
     font-size: 18px;
-    color: #303030; }
+    color: #303030;
+    display: inline !important;
+    padding: 0 !important; }
     @media only screen and (min-width: 601px) {
       .wcpt-schedule tbody td .wcpt-session-title {
         font-size: 20px; } }
@@ -1207,20 +1209,26 @@ textarea {
   .wcpt-schedule tbody td .wcpt-session-speakers {
     font-size: 14px;
     font-style: italic;
-    color: #ffba00; }
+    color: #ffba00;
+    display: inline !important;
+    padding: 0 !important; }
     @media only screen and (min-width: 601px) {
       .wcpt-schedule tbody td .wcpt-session-speakers {
         font-size: 15px; } }
 
-.wcpt-schedule tbody tr.wcpt-time-0845 td, .wcpt-schedule tbody tr.wcpt-time-0945 td, .wcpt-schedule tbody tr.wcpt-time-1125 td, .wcpt-schedule tbody tr.wcpt-time-1315 td, .wcpt-schedule tbody tr.wcpt-time-1610 td, .wcpt-schedule tbody tr.wcpt-time-1800 td, .wcpt-schedule tbody tr.wcpt-time-1055 td, .wcpt-schedule tbody tr.wcpt-time-1240 td, .wcpt-schedule tbody tr.wcpt-time-1525 td, .wcpt-schedule tbody tr.wcpt-time-1710 td, .wcpt-schedule tbody tr.wcpt-time-1900 td {
-  position: relative; }
-  .wcpt-schedule tbody tr.wcpt-time-0845 td:after, .wcpt-schedule tbody tr.wcpt-time-0945 td:after, .wcpt-schedule tbody tr.wcpt-time-1125 td:after, .wcpt-schedule tbody tr.wcpt-time-1315 td:after, .wcpt-schedule tbody tr.wcpt-time-1610 td:after, .wcpt-schedule tbody tr.wcpt-time-1800 td:after, .wcpt-schedule tbody tr.wcpt-time-1055 td:after, .wcpt-schedule tbody tr.wcpt-time-1240 td:after, .wcpt-schedule tbody tr.wcpt-time-1525 td:after, .wcpt-schedule tbody tr.wcpt-time-1710 td:after, .wcpt-schedule tbody tr.wcpt-time-1900 td:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 8px;
-    bottom: 8px;
-    background-color: #f7f7f7;
-    z-index: -1; }
+.wcpt-schedule tbody tr {
+  border: none !important;
+  margin: 0 !important;
+  display: table-row !important; }
+  .wcpt-schedule tbody tr.wcpt-time-0845 td, .wcpt-schedule tbody tr.wcpt-time-0945 td, .wcpt-schedule tbody tr.wcpt-time-1125 td, .wcpt-schedule tbody tr.wcpt-time-1315 td, .wcpt-schedule tbody tr.wcpt-time-1610 td, .wcpt-schedule tbody tr.wcpt-time-1800 td, .wcpt-schedule tbody tr.wcpt-time-1055 td, .wcpt-schedule tbody tr.wcpt-time-1240 td, .wcpt-schedule tbody tr.wcpt-time-1525 td, .wcpt-schedule tbody tr.wcpt-time-1710 td, .wcpt-schedule tbody tr.wcpt-time-1900 td {
+    position: relative; }
+    .wcpt-schedule tbody tr.wcpt-time-0845 td:after, .wcpt-schedule tbody tr.wcpt-time-0945 td:after, .wcpt-schedule tbody tr.wcpt-time-1125 td:after, .wcpt-schedule tbody tr.wcpt-time-1315 td:after, .wcpt-schedule tbody tr.wcpt-time-1610 td:after, .wcpt-schedule tbody tr.wcpt-time-1800 td:after, .wcpt-schedule tbody tr.wcpt-time-1055 td:after, .wcpt-schedule tbody tr.wcpt-time-1240 td:after, .wcpt-schedule tbody tr.wcpt-time-1525 td:after, .wcpt-schedule tbody tr.wcpt-time-1710 td:after, .wcpt-schedule tbody tr.wcpt-time-1900 td:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 8px;
+      bottom: 8px;
+      background-color: #f7f7f7;
+      z-index: -1; }
