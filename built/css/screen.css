@@ -568,6 +568,10 @@ p {
   font-weight: lighter;
   font-size: 24px; }
 
+.site-content img {
+  max-width: 100%;
+  height: auto; }
+
 .entry-header {
   position: relative; }
   p + .entry-header {
@@ -734,6 +738,16 @@ p {
     width: 100%;
     height: auto; }
 
+.single-wcb_speaker .type-wcb_speaker .entry-meta {
+  display: none; }
+
+.single-wcb_speaker .type-wcb_speaker .entry-content .speaker-avatar {
+  float: left;
+  margin: 0 20px 20px 0; }
+
+.single-wcb_speaker .type-wcb_speaker .entry-content .speaker-sessions {
+  clear: left; }
+
 .wcua-partner-item {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 40px;
@@ -849,27 +863,27 @@ p {
           color: #dddddd;
           text-decoration: none; }
 
-.blog #content, .single-post #content, .archive #content {
+.blog #content, .single-post #content, .archive #content, .single-wcb_session #content, .single-wcb_speaker #content {
   max-width: 680px;
   margin-left: auto;
   margin-right: auto; }
-  .blog #content .post, .single-post #content .post, .archive #content .post {
+  .blog #content .post, .single-post #content .post, .archive #content .post, .single-wcb_session #content .post, .single-wcb_speaker #content .post {
     margin-bottom: 35px;
     border-bottom: 1px solid #EEEEEE;
     padding-bottom: 10px; }
-    .blog #content .post footer.entry-meta, .single-post #content .post footer.entry-meta, .archive #content .post footer.entry-meta {
+    .blog #content .post footer.entry-meta, .single-post #content .post footer.entry-meta, .archive #content .post footer.entry-meta, .single-wcb_session #content .post footer.entry-meta, .single-wcb_speaker #content .post footer.entry-meta {
       display: none; }
-    .blog #content .post .entry-header, .single-post #content .post .entry-header, .archive #content .post .entry-header {
+    .blog #content .post .entry-header, .single-post #content .post .entry-header, .archive #content .post .entry-header, .single-wcb_session #content .post .entry-header, .single-wcb_speaker #content .post .entry-header {
       padding-top: 45px;
       position: relative; }
-      .blog #content .post .entry-header .entry-title, .single-post #content .post .entry-header .entry-title, .archive #content .post .entry-header .entry-title {
+      .blog #content .post .entry-header .entry-title, .single-post #content .post .entry-header .entry-title, .archive #content .post .entry-header .entry-title, .single-wcb_session #content .post .entry-header .entry-title, .single-wcb_speaker #content .post .entry-header .entry-title {
         padding: 0;
         margin: 0;
         border: none;
         font-size: 24px; }
-        .blog #content .post .entry-header .entry-title:after, .single-post #content .post .entry-header .entry-title:after, .archive #content .post .entry-header .entry-title:after {
+        .blog #content .post .entry-header .entry-title:after, .single-post #content .post .entry-header .entry-title:after, .archive #content .post .entry-header .entry-title:after, .single-wcb_session #content .post .entry-header .entry-title:after, .single-wcb_speaker #content .post .entry-header .entry-title:after {
           display: none; }
-      .blog #content .post .entry-header .entry-meta, .single-post #content .post .entry-header .entry-meta, .archive #content .post .entry-header .entry-meta {
+      .blog #content .post .entry-header .entry-meta, .single-post #content .post .entry-header .entry-meta, .archive #content .post .entry-header .entry-meta, .single-wcb_session #content .post .entry-header .entry-meta, .single-wcb_speaker #content .post .entry-header .entry-meta {
         font-family: "Roboto Condensed", sans-serif;
         position: absolute;
         left: 0;
@@ -878,16 +892,16 @@ p {
         font-weight: bold;
         text-indent: -10000px;
         text-transform: uppercase; }
-      .blog #content .post .entry-header .entry-date, .single-post #content .post .entry-header .entry-date, .archive #content .post .entry-header .entry-date {
+      .blog #content .post .entry-header .entry-date, .single-post #content .post .entry-header .entry-date, .archive #content .post .entry-header .entry-date, .single-wcb_session #content .post .entry-header .entry-date, .single-wcb_speaker #content .post .entry-header .entry-date {
         display: block;
         text-indent: 0;
         position: absolute;
         left: 0;
         top: 0;
         color: #ffba00; }
-      .blog #content .post .entry-header .byline, .single-post #content .post .entry-header .byline, .archive #content .post .entry-header .byline {
+      .blog #content .post .entry-header .byline, .single-post #content .post .entry-header .byline, .archive #content .post .entry-header .byline, .single-wcb_session #content .post .entry-header .byline, .single-wcb_speaker #content .post .entry-header .byline {
         display: inline; }
-      .blog #content .post .entry-header .author.vcard, .single-post #content .post .entry-header .author.vcard, .archive #content .post .entry-header .author.vcard {
+      .blog #content .post .entry-header .author.vcard, .single-post #content .post .entry-header .author.vcard, .archive #content .post .entry-header .author.vcard, .single-wcb_session #content .post .entry-header .author.vcard, .single-wcb_speaker #content .post .entry-header .author.vcard {
         color: #dddddd;
         display: block;
         text-indent: 0;
@@ -895,12 +909,12 @@ p {
         left: 68px;
         top: 0;
         white-space: nowrap; }
-        .blog #content .post .entry-header .author.vcard:before, .single-post #content .post .entry-header .author.vcard:before, .archive #content .post .entry-header .author.vcard:before {
+        .blog #content .post .entry-header .author.vcard:before, .single-post #content .post .entry-header .author.vcard:before, .archive #content .post .entry-header .author.vcard:before, .single-wcb_session #content .post .entry-header .author.vcard:before, .single-wcb_speaker #content .post .entry-header .author.vcard:before {
           content: "/ Автор: "; }
-        .blog #content .post .entry-header .author.vcard a, .single-post #content .post .entry-header .author.vcard a, .archive #content .post .entry-header .author.vcard a {
+        .blog #content .post .entry-header .author.vcard a, .single-post #content .post .entry-header .author.vcard a, .archive #content .post .entry-header .author.vcard a, .single-wcb_session #content .post .entry-header .author.vcard a, .single-wcb_speaker #content .post .entry-header .author.vcard a {
           color: #dddddd;
           text-decoration: none; }
-  .blog #content .site-navigation, .single-post #content .site-navigation, .archive #content .site-navigation {
+  .blog #content .site-navigation, .single-post #content .site-navigation, .archive #content .site-navigation, .single-wcb_session #content .site-navigation, .single-wcb_speaker #content .site-navigation {
     margin: 48px 0; }
 
 .comments-area .comments-title {
