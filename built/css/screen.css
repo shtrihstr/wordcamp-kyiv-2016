@@ -1244,3 +1244,12 @@ textarea {
       bottom: 8px;
       background-color: #f7f7f7;
       z-index: -1; }
+
+.tix-attendee-list li, .tix-attendee-list.tix-columns-4 li {
+  width: 100% !important; }
+  @media only screen and (min-width: 601px) {
+    .tix-attendee-list li, .tix-attendee-list.tix-columns-4 li {
+      width: 50% !important; } }
+  @media only screen and (min-width: 1031px) {
+    .tix-attendee-list li, .tix-attendee-list.tix-columns-4 li {
+      width: 25% !important; } }
