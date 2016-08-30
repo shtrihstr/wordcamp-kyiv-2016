@@ -1218,10 +1218,10 @@ textarea {
     padding: 0 !important; }
     @media only screen and (min-width: 601px) {
       .wcpt-schedule tbody td .wcpt-session-title {
-        font-size: 20px; } }
-    .wcpt-schedule tbody td .wcpt-session-title:after {
-      content: "\a";
-      white-space: pre; }
+        font-size: 20px; }
+        .wcpt-schedule tbody td .wcpt-session-title:after {
+          content: "\a";
+          white-space: pre; } }
   .wcpt-schedule tbody td .wcpt-session-speakers {
     font-size: 14px;
     font-style: italic;
