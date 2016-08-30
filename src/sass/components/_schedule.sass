@@ -32,7 +32,6 @@
         +breakpoint-min($responsive-mobile)
           font-size: 20px
 
-        
       .wcpt-session-speakers
         font-size: 14px
         font-style: italic
@@ -40,6 +39,8 @@
         display: block !important
         padding: 0 !important
         +breakpoint-min($responsive-mobile)
+        &:before
+          display: none !important
 
     tr
       border: none !important

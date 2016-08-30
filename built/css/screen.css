@@ -1225,6 +1225,8 @@ textarea {
     color: #ffba00;
     display: block !important;
     padding: 0 !important; }
+    .wcpt-schedule tbody td .wcpt-session-speakers:before {
+      display: none !important; }
 
 .wcpt-schedule tbody tr {
   border: none !important;
