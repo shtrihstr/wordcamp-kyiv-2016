@@ -738,6 +738,9 @@ p {
     width: 100%;
     height: auto; }
 
+.wcb_session .entry-content .session-speakers, .wcb_session .entry-content #session-speaker-names {
+  display: none; }
+
 .single-wcb_speaker .type-wcb_speaker .entry-meta {
   display: none; }
 
