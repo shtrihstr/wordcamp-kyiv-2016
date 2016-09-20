@@ -1256,3 +1256,8 @@ textarea {
   @media only screen and (min-width: 1031px) {
     .tix-attendee-list li, .tix-attendee-list.tix-columns-4 li {
       width: 25% !important; } }
+
+.tix-attendee-list .wcpt-session-title, .tix-attendee-list.tix-columns-4 .wcpt-session-title {
+  text-decoration: none; }
+  .tix-attendee-list .wcpt-session-title:hover, .tix-attendee-list.tix-columns-4 .wcpt-session-title:hover {
+    text-decoration: underline; }
